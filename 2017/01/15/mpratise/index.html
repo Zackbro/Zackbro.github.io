@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="数据结构笔记," />
+  <meta name="keywords" content="Hexo, NexT" />
 
 
 
@@ -84,34 +84,46 @@
 
 
 
-<meta name="description" content="while循环： 在条件为真时执行   for循环：按执行次数执行一组语句
-任何可以被递归定义的函数，都可以被改写为迭代式程序
-Array.isArray()来判断一个对象是否为数组
-浅复制：对一个数组进行复制，新的数组只是增加了一个对老数组的引用，修改老数组的值，新的也会变化。还有深复制。（p16）
-查找元素
-index（）  存在返回索引，否则返回-1
-将数组转化为字符串： join（）和t">
+<meta name="description" content="算法基本排序算法
+其核心思想是指对一组数据按照一定顺序重新排列。
+重新排列时用到的技术是一组嵌套的for循环。
+其中外循环用于遍历数组的每一项，内循环则用于比较元素。
+
+冒泡排序算法
+它是最慢的排序算法之一，也是最容易实现的排序算法。
+此算法会多次在数组中移动，比较相邻的数据，当左侧大于右侧时进行互换。
+
+选择排序算法
+选择排序从数组的开头开始，将第一个元素和其它元素进行比较，检查完所有的元素后，">
 <meta property="og:type" content="article">
-<meta property="og:title" content="js数据结构和算法笔记">
-<meta property="og:url" content="http://yoursite.com/2017/01/05/learing-datastrc/index.html">
+<meta property="og:title" content="js数据结构和算法笔记（3）">
+<meta property="og:url" content="http://yoursite.com/2017/01/15/mpratise/index.html">
 <meta property="og:site_name" content="Zack’s Notes">
-<meta property="og:description" content="while循环： 在条件为真时执行   for循环：按执行次数执行一组语句
-任何可以被递归定义的函数，都可以被改写为迭代式程序
-Array.isArray()来判断一个对象是否为数组
-浅复制：对一个数组进行复制，新的数组只是增加了一个对老数组的引用，修改老数组的值，新的也会变化。还有深复制。（p16）
-查找元素
-index（）  存在返回索引，否则返回-1
-将数组转化为字符串： join（）和t">
-<meta property="og:updated_time" content="2017-01-11T11:00:16.750Z">
+<meta property="og:description" content="算法基本排序算法
+其核心思想是指对一组数据按照一定顺序重新排列。
+重新排列时用到的技术是一组嵌套的for循环。
+其中外循环用于遍历数组的每一项，内循环则用于比较元素。
+
+冒泡排序算法
+它是最慢的排序算法之一，也是最容易实现的排序算法。
+此算法会多次在数组中移动，比较相邻的数据，当左侧大于右侧时进行互换。
+
+选择排序算法
+选择排序从数组的开头开始，将第一个元素和其它元素进行比较，检查完所有的元素后，">
+<meta property="og:updated_time" content="2017-01-15T09:36:00.537Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="js数据结构和算法笔记">
-<meta name="twitter:description" content="while循环： 在条件为真时执行   for循环：按执行次数执行一组语句
-任何可以被递归定义的函数，都可以被改写为迭代式程序
-Array.isArray()来判断一个对象是否为数组
-浅复制：对一个数组进行复制，新的数组只是增加了一个对老数组的引用，修改老数组的值，新的也会变化。还有深复制。（p16）
-查找元素
-index（）  存在返回索引，否则返回-1
-将数组转化为字符串： join（）和t">
+<meta name="twitter:title" content="js数据结构和算法笔记（3）">
+<meta name="twitter:description" content="算法基本排序算法
+其核心思想是指对一组数据按照一定顺序重新排列。
+重新排列时用到的技术是一组嵌套的for循环。
+其中外循环用于遍历数组的每一项，内循环则用于比较元素。
+
+冒泡排序算法
+它是最慢的排序算法之一，也是最容易实现的排序算法。
+此算法会多次在数组中移动，比较相邻的数据，当左侧大于右侧时进行互换。
+
+选择排序算法
+选择排序从数组的开头开始，将第一个元素和其它元素进行比较，检查完所有的元素后，">
 
 
 
@@ -139,13 +151,13 @@ index（）  存在返回索引，否则返回-1
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/01/05/learing-datastrc/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/01/15/mpratise/"/>
 
 
 
 
 
-  <title> js数据结构和算法笔记 | Zack’s Notes </title>
+  <title> js数据结构和算法笔记（3） | Zack’s Notes </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -258,7 +270,7 @@ index（）  存在返回索引，否则返回-1
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/01/05/learing-datastrc/">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/01/15/mpratise/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="Zack">
@@ -282,7 +294,7 @@ index（）  存在返回索引，否则返回-1
             
             
               
-                js数据结构和算法笔记
+                js数据结构和算法笔记（3）
               
             
           </h1>
@@ -297,8 +309,8 @@ index（）  存在返回索引，否则返回-1
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-01-05T18:29:48+08:00">
-                2017-01-05
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-01-15T16:38:13+08:00">
+                2017-01-15
               </time>
             
 
@@ -333,30 +345,23 @@ index（）  存在返回索引，否则返回-1
       
 
       
-        <ol>
-<li>while循环： 在条件为真时执行   for循环：按执行次数执行一组语句</li>
-<li>任何可以被递归定义的函数，都可以被改写为迭代式程序</li>
-<li>Array.isArray()来判断一个对象是否为数组</li>
-<li>浅复制：对一个数组进行复制，新的数组只是增加了一个对老数组的引用，修改老数组的值，新的也会变化。还有深复制。（p16）</li>
-<li>查找元素</li>
-<li>index（）  存在返回索引，否则返回-1</li>
-<li>将数组转化为字符串： join（）和toString（）</li>
-<li>由已有数组创建新数组：concat（）和splice（起始索引，长度）也可用于增加和删除</li>
-<li>数组添加：push，unshift 删除：pop， shift</li>
-<li>从数组中间位置添加元素：splice（位置，0，要添加的元素）</li>
-<li>排序：reverse，sort</li>
-<li>不生成新数组的迭代器方法：forEach（）；every（）全为true，返回true；some（）一为true，返回true；reduce（）</li>
-<li>生成新数组的迭代器方法：map（）；filter（）用于过滤一些东西</li>
-<li>列表是一组有序的数据，每个列表中的数据称为元素。</li>
-<li>栈是一种特殊的列表，栈内的元素只能通过列表的一端访问，这一端称为栈顶。栈被称为一种后入先出的数据结构。</li>
-<li>适用栈来解决掉问题：数制间的相互转换；回文；模拟递归</li>
-<li>队列是一种先进先出的数据结构，在队尾插入元素，在队首删除元素。</li>
-<li>链表是由一组节点组成的集合，每个节点都使用一个对象的引用指向它的后继，指向另一个节点的引用叫做链。</li>
-<li>数组元素靠它们的位置进行引用，链表元素是靠相互之间的关系进行引用。</li>
-<li>双向链表，循环列表</li>
-<li>字典：以键值对存储数据的数据结构</li>
-<li>Object 类的 keys() 方法可以返回传入参数中存储的所有键。</li>
-</ol>
+        <h2 id="算法"><a href="#算法" class="headerlink" title="算法"></a>算法</h2><h3 id="基本排序算法"><a href="#基本排序算法" class="headerlink" title="基本排序算法"></a>基本排序算法</h3><blockquote>
+<p>其核心思想是指对一组数据按照一定顺序重新排列。</p>
+<p>重新排列时用到的技术是一组嵌套的for循环。</p>
+<p>其中外循环用于遍历数组的每一项，内循环则用于比较元素。</p>
+</blockquote>
+<h3 id="冒泡排序算法"><a href="#冒泡排序算法" class="headerlink" title="冒泡排序算法"></a>冒泡排序算法</h3><blockquote>
+<p>它是最慢的排序算法之一，也是最容易实现的排序算法。</p>
+<p>此算法会多次在数组中移动，比较相邻的数据，当左侧大于右侧时进行互换。</p>
+</blockquote>
+<h3 id="选择排序算法"><a href="#选择排序算法" class="headerlink" title="选择排序算法"></a>选择排序算法</h3><blockquote>
+<p>选择排序从数组的开头开始，将第一个元素和其它元素进行比较，检查完所有的元素后，最小的元素会被放在数组的第一个位置，然后算法从第二个位置继续。<br>当进行到数组倒数第二个位置时，所有的数据便完成了排序。</p>
+<p>选择排序会用到嵌套循环，外循环从数组的第一个元素移动到倒数第二个元素；内循环从第二个数组元素移动到最后一个元素，查找比当前外循环所指向的元素小的元素，每次内循环迭代后，数组中最小的值都会被赋值到合适的位置。</p>
+</blockquote>
+<h3 id="插入排序算法"><a href="#插入排序算法" class="headerlink" title="插入排序算法"></a>插入排序算法</h3><blockquote>
+<p>插入排序类似于人类按数字或字母排序，选择选中的元素将它插入到合适的位置。</p>
+<p>插入排序有2个循环。外循环将数组元素挨个移动，而内循环则对外循环选中的元素及它后面的那个元素进行比较，如果外循环中选中的元素比内循环选中的元素小，那么数组元素会向右移动，为内循环的这个元素腾出位置。</p>
+</blockquote>
 
       
     </div>
@@ -378,26 +383,20 @@ index（）  存在返回索引，否则返回-1
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/数据结构笔记/" rel="tag"># 数据结构笔记</a>
-          
-        </div>
-      
 
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/01/06/learing-datastrc2/" rel="next" title="js数据结构和算法笔记2">
+                <i class="fa fa-chevron-left"></i> js数据结构和算法笔记2
+              </a>
             
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/01/06/hello-world/" rel="prev" title="Hello World">
-                Hello World <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -444,8 +443,17 @@ index（）  存在返回索引，否则返回-1
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/uploads/avatar.jpg"
@@ -494,6 +502,22 @@ index（）  存在返回索引，否则返回-1
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#算法"><span class="nav-number">1.</span> <span class="nav-text">算法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#基本排序算法"><span class="nav-number">1.1.</span> <span class="nav-text">基本排序算法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#冒泡排序算法"><span class="nav-number">1.2.</span> <span class="nav-text">冒泡排序算法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#选择排序算法"><span class="nav-number">1.3.</span> <span class="nav-text">选择排序算法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#插入排序算法"><span class="nav-number">1.4.</span> <span class="nav-text">插入排序算法</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
     </div>
