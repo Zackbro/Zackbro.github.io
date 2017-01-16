@@ -84,19 +84,40 @@
 
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+<meta name="description" content="高级排序算法希尔排序
+在插入排序的基础上做了很大的改善。
+它会首先比较距离较远的元素，使用这种方案可以使离正确位置很远的元素更快的回到合适的位置上。
+希尔排序的工作原理是，通过定义一个间隔序列表示在排序过程中进行比较的元素之间有多远的间隔。
+
+归并排序
+把一系列排好序的子序列合并成一个大的完整序列。
+我们需要2个排好序的子数组，先从最小的数据开始插入，最后合并得到第三个数组。
+自底向上的归并排序：">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2017/01/06/hello-world/index.html">
+<meta property="og:title" content="js数据结构和算法笔记（4）">
+<meta property="og:url" content="http://yoursite.com/2017/01/16/Algorithm2/index.html">
 <meta property="og:site_name" content="Zack’s Notes">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
-<meta property="og:updated_time" content="2017-01-06T01:59:17.097Z">
+<meta property="og:description" content="高级排序算法希尔排序
+在插入排序的基础上做了很大的改善。
+它会首先比较距离较远的元素，使用这种方案可以使离正确位置很远的元素更快的回到合适的位置上。
+希尔排序的工作原理是，通过定义一个间隔序列表示在排序过程中进行比较的元素之间有多远的间隔。
+
+归并排序
+把一系列排好序的子序列合并成一个大的完整序列。
+我们需要2个排好序的子数组，先从最小的数据开始插入，最后合并得到第三个数组。
+自底向上的归并排序：">
+<meta property="og:updated_time" content="2017-01-16T12:09:37.444Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+<meta name="twitter:title" content="js数据结构和算法笔记（4）">
+<meta name="twitter:description" content="高级排序算法希尔排序
+在插入排序的基础上做了很大的改善。
+它会首先比较距离较远的元素，使用这种方案可以使离正确位置很远的元素更快的回到合适的位置上。
+希尔排序的工作原理是，通过定义一个间隔序列表示在排序过程中进行比较的元素之间有多远的间隔。
+
+归并排序
+把一系列排好序的子序列合并成一个大的完整序列。
+我们需要2个排好序的子数组，先从最小的数据开始插入，最后合并得到第三个数组。
+自底向上的归并排序：">
 
 
 
@@ -124,13 +145,13 @@ Quick">
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/01/06/hello-world/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/01/16/Algorithm2/"/>
 
 
 
 
 
-  <title> Hello World | Zack’s Notes </title>
+  <title> js数据结构和算法笔记（4） | Zack’s Notes </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -243,7 +264,7 @@ Quick">
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/01/06/hello-world/">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/01/16/Algorithm2/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="Zack">
@@ -267,7 +288,7 @@ Quick">
             
             
               
-                Hello World
+                js数据结构和算法笔记（4）
               
             
           </h1>
@@ -282,8 +303,8 @@ Quick">
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-01-06T09:59:17+08:00">
-                2017-01-06
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-01-16T19:53:38+08:00">
+                2017-01-16
               </time>
             
 
@@ -318,16 +339,21 @@ Quick">
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
+        <h2 id="高级排序算法"><a href="#高级排序算法" class="headerlink" title="高级排序算法"></a>高级排序算法</h2><h3 id="希尔排序"><a href="#希尔排序" class="headerlink" title="希尔排序"></a>希尔排序</h3><blockquote>
+<p>在插入排序的基础上做了很大的改善。</p>
+<p>它会首先比较距离较远的元素，使用这种方案可以使离正确位置很远的元素更快的回到合适的位置上。</p>
+<p>希尔排序的工作原理是，通过定义一个间隔序列表示在排序过程中进行比较的元素之间有多远的间隔。</p>
+</blockquote>
+<h3 id="归并排序"><a href="#归并排序" class="headerlink" title="归并排序"></a>归并排序</h3><blockquote>
+<p>把一系列排好序的子序列合并成一个大的完整序列。</p>
+<p>我们需要2个排好序的子数组，先从最小的数据开始插入，最后合并得到第三个数组。</p>
+<p>自底向上的归并排序：首先将数据及分解为一组只有一个元素的数组，然后通过创建一组左右子数组将它们慢慢合并起来，每次合并都保存一部分排好序的数据，直到最后都排好序。</p>
+</blockquote>
+<h3 id="快速排序"><a href="#快速排序" class="headerlink" title="快速排序"></a>快速排序</h3><blockquote>
+<p>首先在列表中选择一个元素作为基准值。</p>
+<p>数据排序围绕基准值进行，将列表中小于基准值的元素移动到数组的底部，将大于基准值的元素移动到数组的顶部。</p>
+</blockquote>
+<h3 id="堆排序"><a href="#堆排序" class="headerlink" title="堆排序"></a>堆排序</h3>
       
     </div>
 
@@ -353,8 +379,8 @@ Quick">
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/01/05/learing-datastrc/" rel="next" title="js数据结构和算法笔记">
-                <i class="fa fa-chevron-left"></i> js数据结构和算法笔记
+              <a href="/2017/01/15/Algorithm/" rel="next" title="js数据结构和算法笔记（3）">
+                <i class="fa fa-chevron-left"></i> js数据结构和算法笔记（3）
               </a>
             
           </div>
@@ -362,10 +388,6 @@ Quick">
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/01/06/learing-datastrc2/" rel="prev" title="js数据结构和算法笔记2">
-                js数据结构和算法笔记2 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -481,7 +503,7 @@ Quick">
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#高级排序算法"><span class="nav-number">1.</span> <span class="nav-text">高级排序算法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#希尔排序"><span class="nav-number">1.1.</span> <span class="nav-text">希尔排序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#归并排序"><span class="nav-number">1.2.</span> <span class="nav-text">归并排序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#快速排序"><span class="nav-number">1.3.</span> <span class="nav-text">快速排序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#堆排序"><span class="nav-number">1.4.</span> <span class="nav-text">堆排序</span></a></li></ol></li></ol></div>
             
 
           </div>
