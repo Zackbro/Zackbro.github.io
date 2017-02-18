@@ -86,29 +86,26 @@
 
 <meta name="description" content="1.apply： 构建一个参数数组并让我们去调用函数，它允许我们选择this的值。可接收2个参数，第一个是绑定this的那个对象，第二个是参数。
 2.函数里的参数数组，即arguments数组。缺点：它不是一个真正的数组，虽然拥有length属性，但缺少数组方法。
-3.在函数前面加上new前缀来调用（即声明一个对象），且返回值不是一个对象，则返回this（该新对象）。
-4.js移除字符串末端空白的">
+3.在函数前面加上new前缀来调用（即声明一个对象），且返回值不是一个对象，则返回this（该新对象）。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="JavaScript语言精粹">
 <meta property="og:url" content="http://yoursite.com/2016/12/06/JSEssential/index.html">
 <meta property="og:site_name" content="Zack’s Notes">
 <meta property="og:description" content="1.apply： 构建一个参数数组并让我们去调用函数，它允许我们选择this的值。可接收2个参数，第一个是绑定this的那个对象，第二个是参数。
 2.函数里的参数数组，即arguments数组。缺点：它不是一个真正的数组，虽然拥有length属性，但缺少数组方法。
-3.在函数前面加上new前缀来调用（即声明一个对象），且返回值不是一个对象，则返回this（该新对象）。
-4.js移除字符串末端空白的">
-<meta property="og:image" content="http://yoursite.com/img/JSEssential.png">
-<meta property="og:image" content="http://yoursite.com/img/JSEssential2.png">
-<meta property="og:image" content="http://yoursite.com/img/JSEssential3.png">
-<meta property="og:image" content="http://yoursite.com/img/JSEssential4.png">
-<meta property="og:image" content="http://yoursite.com/img/JSEssential5.png">
-<meta property="og:updated_time" content="2017-02-18T06:32:15.304Z">
+3.在函数前面加上new前缀来调用（即声明一个对象），且返回值不是一个对象，则返回this（该新对象）。">
+<meta property="og:image" content="http://yoursite.com/images/MyImg/JSEssential.png">
+<meta property="og:image" content="http://yoursite.com/images/MyImg/JSEssential2.png">
+<meta property="og:image" content="http://yoursite.com/images/MyImg/JSEssential3.png">
+<meta property="og:image" content="http://yoursite.com/images/MyImg/JSEssential4.png">
+<meta property="og:image" content="http://yoursite.com/images/MyImg/JSEssential5.png">
+<meta property="og:updated_time" content="2017-02-18T06:52:56.509Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JavaScript语言精粹">
 <meta name="twitter:description" content="1.apply： 构建一个参数数组并让我们去调用函数，它允许我们选择this的值。可接收2个参数，第一个是绑定this的那个对象，第二个是参数。
 2.函数里的参数数组，即arguments数组。缺点：它不是一个真正的数组，虽然拥有length属性，但缺少数组方法。
-3.在函数前面加上new前缀来调用（即声明一个对象），且返回值不是一个对象，则返回this（该新对象）。
-4.js移除字符串末端空白的">
-<meta name="twitter:image" content="http://yoursite.com/img/JSEssential.png">
+3.在函数前面加上new前缀来调用（即声明一个对象），且返回值不是一个对象，则返回this（该新对象）。">
+<meta name="twitter:image" content="http://yoursite.com/images/MyImg/JSEssential.png">
 
 
 
@@ -323,13 +320,14 @@
         <p>1.apply： 构建一个参数数组并让我们去调用函数，它允许我们选择this的值。可接收2个参数，第一个是绑定this的那个对象，第二个是参数。</p>
 <p>2.函数里的参数数组，即arguments数组。缺点：它不是一个真正的数组，虽然拥有length属性，但缺少数组方法。</p>
 <p>3.在函数前面加上new前缀来调用（即声明一个对象），且返回值不是一个对象，则返回this（该新对象）。</p>
+<a id="more"></a>
 <p>4.js移除字符串末端空白的方法：</p>
-<p><img src="img/JSEssential.png" alt=""></p>
+<p><img src="images/MyImg/JSEssential.png" class=""></p>
 <p>5.闭包？？？page52  访问的是实际变量而不是复制？</p>
 <p>6.for循环，那个事件处理器函数绑定了变量i，而不是函数在构造时变量i的值。修改前：</p>
-<p><img src="img/JSEssential2.png" alt=""></p>
+<p><img src="images/MyImg/JSEssential2.png" class=""></p>
 <p>  修改后：</p>
-<p><img src="img/JSEssential3.png" alt=""></p>
+<p><img src="images/MyImg/JSEssential3.png" class=""></p>
 <p>  定义了一个函数并立即传递i进去执行，而不是把一个函数赋值给onclick.那个函数将返回一个事件处理器函数，这个事件处理器函数绑定的是传递进去i 的值，而不是定义在add函数里i的值。 那个被返回的函数被赋值给onclick</p>
 <p>7.array.concat(). concat返回一个新数组，是对array的浅复制，并将一个或多个参数添加在后面。</p>
 <p>8.array.join（separator）,把一个array构造成一个字符串。</p>
@@ -345,9 +343,9 @@
 <p>18.string.split（separator，limit）将string分割成片段来创建一个字符串数组。</p>
 <p>19.parsrInt,将字符串转换为整数，在遇到非数字时停止解析</p>
 <p>20.检测数组的方法：</p>
-<p><img src="img/JSEssential4.png" alt=""></p>
+<p><img src="images/MyImg/JSEssential4.png" class=""></p>
 <p> 或者（这个更好）</p>
-<p><img src="img/JSEssential5.png" alt=""></p>
+<p><img src="images/MyImg/JSEssential5.png" class=""></p>
 
       
     </div>
