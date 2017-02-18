@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next mist use-motion" lang="zh-Hans">
+<html class="theme-next pisces use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -84,40 +84,22 @@
 
 
 
-<meta name="description" content="高级排序算法希尔排序
-在插入排序的基础上做了很大的改善。
+<meta name="description" content="高级排序算法希尔排序在插入排序的基础上做了很大的改善。
 它会首先比较距离较远的元素，使用这种方案可以使离正确位置很远的元素更快的回到合适的位置上。
-希尔排序的工作原理是，通过定义一个间隔序列表示在排序过程中进行比较的元素之间有多远的间隔。
-
-归并排序
-把一系列排好序的子序列合并成一个大的完整序列。
-我们需要2个排好序的子数组，先从最小的数据开始插入，最后合并得到第三个数组。
-自底向上的归并排序：">
+希尔排序的工作原理是，通过定义一个间隔序列表示在排序过程中进行比较的元素之间有多远的间隔。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="js数据结构和算法笔记（4）">
 <meta property="og:url" content="http://yoursite.com/2017/01/16/Algorithm2/index.html">
 <meta property="og:site_name" content="Zack’s Notes">
-<meta property="og:description" content="高级排序算法希尔排序
-在插入排序的基础上做了很大的改善。
+<meta property="og:description" content="高级排序算法希尔排序在插入排序的基础上做了很大的改善。
 它会首先比较距离较远的元素，使用这种方案可以使离正确位置很远的元素更快的回到合适的位置上。
-希尔排序的工作原理是，通过定义一个间隔序列表示在排序过程中进行比较的元素之间有多远的间隔。
-
-归并排序
-把一系列排好序的子序列合并成一个大的完整序列。
-我们需要2个排好序的子数组，先从最小的数据开始插入，最后合并得到第三个数组。
-自底向上的归并排序：">
-<meta property="og:updated_time" content="2017-01-16T12:09:37.444Z">
+希尔排序的工作原理是，通过定义一个间隔序列表示在排序过程中进行比较的元素之间有多远的间隔。">
+<meta property="og:updated_time" content="2017-02-18T06:11:10.982Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="js数据结构和算法笔记（4）">
-<meta name="twitter:description" content="高级排序算法希尔排序
-在插入排序的基础上做了很大的改善。
+<meta name="twitter:description" content="高级排序算法希尔排序在插入排序的基础上做了很大的改善。
 它会首先比较距离较远的元素，使用这种方案可以使离正确位置很远的元素更快的回到合适的位置上。
-希尔排序的工作原理是，通过定义一个间隔序列表示在排序过程中进行比较的元素之间有多远的间隔。
-
-归并排序
-把一系列排好序的子序列合并成一个大的完整序列。
-我们需要2个排好序的子数组，先从最小的数据开始插入，最后合并得到第三个数组。
-自底向上的归并排序：">
+希尔排序的工作原理是，通过定义一个间隔序列表示在排序过程中进行比较的元素之间有多远的间隔。">
 
 
 
@@ -125,7 +107,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Mist',
+    scheme: 'Pisces',
     sidebar: {"position":"left","display":"post"},
     fancybox: true,
     motion: true,
@@ -222,16 +204,6 @@
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
             归档
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
-            
-            标签
           </a>
         </li>
       
@@ -339,21 +311,16 @@
       
 
       
-        <h2 id="高级排序算法"><a href="#高级排序算法" class="headerlink" title="高级排序算法"></a>高级排序算法</h2><h3 id="希尔排序"><a href="#希尔排序" class="headerlink" title="希尔排序"></a>希尔排序</h3><blockquote>
-<p>在插入排序的基础上做了很大的改善。</p>
+        <h2 id="高级排序算法"><a href="#高级排序算法" class="headerlink" title="高级排序算法"></a>高级排序算法</h2><h4 id="希尔排序"><a href="#希尔排序" class="headerlink" title="希尔排序"></a>希尔排序</h4><p>在插入排序的基础上做了很大的改善。</p>
 <p>它会首先比较距离较远的元素，使用这种方案可以使离正确位置很远的元素更快的回到合适的位置上。</p>
 <p>希尔排序的工作原理是，通过定义一个间隔序列表示在排序过程中进行比较的元素之间有多远的间隔。</p>
-</blockquote>
-<h3 id="归并排序"><a href="#归并排序" class="headerlink" title="归并排序"></a>归并排序</h3><blockquote>
-<p>把一系列排好序的子序列合并成一个大的完整序列。</p>
+<a id="more"></a>
+<h4 id="归并排序"><a href="#归并排序" class="headerlink" title="归并排序"></a>归并排序</h4><p>把一系列排好序的子序列合并成一个大的完整序列。</p>
 <p>我们需要2个排好序的子数组，先从最小的数据开始插入，最后合并得到第三个数组。</p>
 <p>自底向上的归并排序：首先将数据及分解为一组只有一个元素的数组，然后通过创建一组左右子数组将它们慢慢合并起来，每次合并都保存一部分排好序的数据，直到最后都排好序。</p>
-</blockquote>
-<h3 id="快速排序"><a href="#快速排序" class="headerlink" title="快速排序"></a>快速排序</h3><blockquote>
-<p>首先在列表中选择一个元素作为基准值。</p>
+<h4 id="快速排序"><a href="#快速排序" class="headerlink" title="快速排序"></a>快速排序</h4><p>首先在列表中选择一个元素作为基准值。</p>
 <p>数据排序围绕基准值进行，将列表中小于基准值的元素移动到数组的底部，将大于基准值的元素移动到数组的顶部。</p>
-</blockquote>
-<h3 id="堆排序"><a href="#堆排序" class="headerlink" title="堆排序"></a>堆排序</h3>
+<h4 id="堆排序"><a href="#堆排序" class="headerlink" title="堆排序"></a>堆排序</h4>
       
     </div>
 
@@ -471,10 +438,10 @@
 
           
             <div class="site-state-item site-state-tags">
-              <a href="/tags">
-                <span class="site-state-item-count">1</span>
+              
+                <span class="site-state-item-count">2</span>
                 <span class="site-state-item-name">标签</span>
-              </a>
+              
             </div>
           
 
@@ -507,7 +474,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#高级排序算法"><span class="nav-number">1.</span> <span class="nav-text">高级排序算法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#希尔排序"><span class="nav-number">1.1.</span> <span class="nav-text">希尔排序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#归并排序"><span class="nav-number">1.2.</span> <span class="nav-text">归并排序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#快速排序"><span class="nav-number">1.3.</span> <span class="nav-text">快速排序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#堆排序"><span class="nav-number">1.4.</span> <span class="nav-text">堆排序</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#高级排序算法"><span class="nav-number">1.</span> <span class="nav-text">高级排序算法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#希尔排序"><span class="nav-number">1.0.1.</span> <span class="nav-text">希尔排序</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#归并排序"><span class="nav-number">1.0.2.</span> <span class="nav-text">归并排序</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#快速排序"><span class="nav-number">1.0.3.</span> <span class="nav-text">快速排序</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#堆排序"><span class="nav-number">1.0.4.</span> <span class="nav-text">堆排序</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
@@ -527,7 +494,7 @@
       <div class="footer-inner">
         <div class="copyright" >
   
-  &copy; 
+  &copy;  2016 - 
   <span itemprop="copyrightYear">2017</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
@@ -543,7 +510,7 @@
 <div class="theme-info">
   主题 -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Mist
+    NexT.Pisces
   </a>
 </div>
 
@@ -610,6 +577,13 @@
 
   
   
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.0"></script>
+
+
 
   
   <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>

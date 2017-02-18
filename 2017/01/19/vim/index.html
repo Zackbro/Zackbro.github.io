@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next mist use-motion" lang="zh-Hans">
+<html class="theme-next pisces use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -87,9 +87,7 @@
 <meta name="description" content="Vim安装
 去官网下载vim，最好下载安装文件而不是压缩包。
 在window下安装在program files(86)文件下运行git命令行会报错，而且需要权限。可以尝试安装在其他地方。
-正确安装之后可以在vim文件夹下看到配置文件_vimrc。
-
-安装vim插件管理vundle注意：在windows下需要先安装git和配置curl，因为需要curl在命令行中运行，所以需要curl.cmd，git">
+正确安装之后可以在vim文件夹下看到配置文件_vimrc。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Vim安装与配置（Windows）">
 <meta property="og:url" content="http://yoursite.com/2017/01/19/vim/index.html">
@@ -97,18 +95,14 @@
 <meta property="og:description" content="Vim安装
 去官网下载vim，最好下载安装文件而不是压缩包。
 在window下安装在program files(86)文件下运行git命令行会报错，而且需要权限。可以尝试安装在其他地方。
-正确安装之后可以在vim文件夹下看到配置文件_vimrc。
-
-安装vim插件管理vundle注意：在windows下需要先安装git和配置curl，因为需要curl在命令行中运行，所以需要curl.cmd，git">
-<meta property="og:updated_time" content="2017-01-19T10:09:19.412Z">
+正确安装之后可以在vim文件夹下看到配置文件_vimrc。">
+<meta property="og:updated_time" content="2017-02-18T06:11:40.163Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Vim安装与配置（Windows）">
 <meta name="twitter:description" content="Vim安装
 去官网下载vim，最好下载安装文件而不是压缩包。
 在window下安装在program files(86)文件下运行git命令行会报错，而且需要权限。可以尝试安装在其他地方。
-正确安装之后可以在vim文件夹下看到配置文件_vimrc。
-
-安装vim插件管理vundle注意：在windows下需要先安装git和配置curl，因为需要curl在命令行中运行，所以需要curl.cmd，git">
+正确安装之后可以在vim文件夹下看到配置文件_vimrc。">
 
 
 
@@ -116,7 +110,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Mist',
+    scheme: 'Pisces',
     sidebar: {"position":"left","display":"post"},
     fancybox: true,
     motion: true,
@@ -213,16 +207,6 @@
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
             归档
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
-            
-            标签
           </a>
         </li>
       
@@ -335,6 +319,7 @@
 <li>在window下安装在program files(86)文件下运行git命令行会报错，而且需要权限。可以尝试安装在其他地方。</li>
 <li>正确安装之后可以在vim文件夹下看到配置文件_vimrc。</li>
 </ol>
+<a id="more"></a>
 <h3 id="安装vim插件管理vundle"><a href="#安装vim插件管理vundle" class="headerlink" title="安装vim插件管理vundle"></a>安装vim插件管理vundle</h3><p>注意：在windows下需要先安装git和配置curl，因为需要curl在命令行中运行，所以需要curl.cmd，github介绍文件如是说。</p>
 <blockquote>
 <p>Vundle for Windows: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">官网介绍</a></p>
@@ -346,8 +331,8 @@
 </ol>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">@rem Do not use <span class="string">"echo off"</span> to not affect any child calls.</div><div class="line">@setlocal</div><div class="line"> </div><div class="line">@rem Get the abolute path to the parent directory, <span class="built_in">which</span> is assumed to be the</div><div class="line">@rem Git installation root.</div><div class="line">@<span class="keyword">for</span> /F <span class="string">"delims="</span> %%I <span class="keyword">in</span> (<span class="string">"%~dp0.."</span>) <span class="keyword">do</span> @<span class="built_in">set</span> git_install_root=%%~fI</div><div class="line">@<span class="built_in">set</span> PATH=%git_install_root%\bin;%git_install_root%\mingw\bin;%git_install_root%\mingw64\bin;%PATH%</div><div class="line">@rem !!!!!!! For 64bit msysgit, replace <span class="string">'mingw'</span> above with <span class="string">'mingw64'</span> !!!!!!!</div><div class="line"> </div><div class="line">@<span class="keyword">if</span> not exist <span class="string">"%HOME%"</span> @<span class="built_in">set</span> HOME=%HOMEDRIVE%%HOMEPATH%</div><div class="line">@<span class="keyword">if</span> not exist <span class="string">"%HOME%"</span> @<span class="built_in">set</span> HOME=%USERPROFILE%</div><div class="line"> </div><div class="line">@curl.exe %*</div></pre></td></tr></table></figure>
 <ol>
-<li>cmd运行curl –version查看是否成功</li>
-<li>安装Vundle：git clone <a href="https://github.com/gmarik/Vundle.vim.git" target="_blank" rel="external">https://github.com/gmarik/Vundle.vim.git</a> C:\Program Files (x86)\Vim\vimfiles\bundle\Vundle.vim； 某些教程上让直接git clone，但在默认的vim安装文件夹下会报错，解决方法是安装vim在其他文件里；或者git clone在其他文件夹下，然后复制到vim相应的文件夹下。</li>
+<li>cmd运行curl –version查看是否成功  </li>
+<li>安装Vundle：git clone <a href="https://github.com/gmarik/Vundle.vim.git" target="_blank" rel="external">https://github.com/gmarik/Vundle.vim.git</a> C:\Program Files (x86)\Vim\vimfiles\bundle\Vundle.vim； 某些教程上让直接git clone，但在默认的vim安装文件夹下会报错，解决方法是安装vim在其他文件里；或者git clone在其他文件夹下，然后复制到vim相应的文件夹下。  </li>
 <li>最后配置_vimrc文件就行，然后通过在Gvim里是使用：BundleInstall命令，可以运行即为成功。</li>
 </ol>
 
@@ -464,10 +449,10 @@
 
           
             <div class="site-state-item site-state-tags">
-              <a href="/tags">
-                <span class="site-state-item-count">1</span>
+              
+                <span class="site-state-item-count">2</span>
                 <span class="site-state-item-name">标签</span>
-              </a>
+              
             </div>
           
 
@@ -520,7 +505,7 @@
       <div class="footer-inner">
         <div class="copyright" >
   
-  &copy; 
+  &copy;  2016 - 
   <span itemprop="copyrightYear">2017</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
@@ -536,7 +521,7 @@
 <div class="theme-info">
   主题 -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Mist
+    NexT.Pisces
   </a>
 </div>
 
@@ -603,6 +588,13 @@
 
   
   
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.0"></script>
+
+
 
   
   <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>

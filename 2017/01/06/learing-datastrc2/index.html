@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next mist use-motion" lang="zh-Hans">
+<html class="theme-next pisces use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -84,37 +84,19 @@
 
 
 
-<meta name="description" content="散列后的数据可以快速的插入或取用，散列使用的数据结构叫做散列表
-使用散列表存储数据时，通过一个散列函数将键映射为一个数组，这个数字的范围是0到散列表的长度。
-用散列函数时，存在将2个键映射成同一个值的可能，这种现象称为碰撞。
-保留余数法。
-集合是一种包含不同元素的数据结构。2个特性： 无序，不同。
-树是一种非线性数据结构，以分层的方式存储数据。
-树最上面的节点称为根节点。
-父节点： 节点下面连接">
+<meta name="description" content="1.散列后的数据可以快速的插入或取用，散列使用的数据结构叫做散列表
+2.使用散列表存储数据时，通过一个散列函数将键映射为一个数组，这个数字的范围是0到散列表的长度。3.用散列函数时，存在将2个键映射成同一个值的可能，这种现象称为碰撞。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="js数据结构和算法笔记2">
 <meta property="og:url" content="http://yoursite.com/2017/01/06/learing-datastrc2/index.html">
 <meta property="og:site_name" content="Zack’s Notes">
-<meta property="og:description" content="散列后的数据可以快速的插入或取用，散列使用的数据结构叫做散列表
-使用散列表存储数据时，通过一个散列函数将键映射为一个数组，这个数字的范围是0到散列表的长度。
-用散列函数时，存在将2个键映射成同一个值的可能，这种现象称为碰撞。
-保留余数法。
-集合是一种包含不同元素的数据结构。2个特性： 无序，不同。
-树是一种非线性数据结构，以分层的方式存储数据。
-树最上面的节点称为根节点。
-父节点： 节点下面连接">
-<meta property="og:updated_time" content="2017-01-13T10:51:58.244Z">
+<meta property="og:description" content="1.散列后的数据可以快速的插入或取用，散列使用的数据结构叫做散列表
+2.使用散列表存储数据时，通过一个散列函数将键映射为一个数组，这个数字的范围是0到散列表的长度。3.用散列函数时，存在将2个键映射成同一个值的可能，这种现象称为碰撞。">
+<meta property="og:updated_time" content="2017-02-18T06:11:30.866Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="js数据结构和算法笔记2">
-<meta name="twitter:description" content="散列后的数据可以快速的插入或取用，散列使用的数据结构叫做散列表
-使用散列表存储数据时，通过一个散列函数将键映射为一个数组，这个数字的范围是0到散列表的长度。
-用散列函数时，存在将2个键映射成同一个值的可能，这种现象称为碰撞。
-保留余数法。
-集合是一种包含不同元素的数据结构。2个特性： 无序，不同。
-树是一种非线性数据结构，以分层的方式存储数据。
-树最上面的节点称为根节点。
-父节点： 节点下面连接">
+<meta name="twitter:description" content="1.散列后的数据可以快速的插入或取用，散列使用的数据结构叫做散列表
+2.使用散列表存储数据时，通过一个散列函数将键映射为一个数组，这个数字的范围是0到散列表的长度。3.用散列函数时，存在将2个键映射成同一个值的可能，这种现象称为碰撞。">
 
 
 
@@ -122,7 +104,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Mist',
+    scheme: 'Pisces',
     sidebar: {"position":"left","display":"post"},
     fancybox: true,
     motion: true,
@@ -219,16 +201,6 @@
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
             归档
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
-            
-            标签
           </a>
         </li>
       
@@ -336,28 +308,26 @@
       
 
       
-        <ol>
-<li>散列后的数据可以快速的插入或取用，散列使用的数据结构叫做散列表</li>
-<li>使用散列表存储数据时，通过一个散列函数将键映射为一个数组，这个数字的范围是0到散列表的长度。</li>
-<li>用散列函数时，存在将2个键映射成同一个值的可能，这种现象称为碰撞。</li>
-<li>保留余数法。</li>
-<li>集合是一种包含不同元素的数据结构。2个特性： 无序，不同。</li>
-<li>树是一种非线性数据结构，以分层的方式存储数据。</li>
-<li>树最上面的节点称为根节点。</li>
-<li>父节点： 节点下面连接多个节点。这些下面的节点称为子节点。</li>
-<li>没有任何子节点的节点称为叶子节点。</li>
-<li>二叉树是一种特殊的树，它的字节点树不超过2个。</li>
-<li>从一个节点到另一个节点的这一组边称为路径，以某种特定的顺序访问树中所有的节点称为树的遍历。</li>
-<li>每个节点都有一个与之相关的值，该值为键。</li>
-<li>二叉查找树是一种特殊的二叉树，相对较小的值保存在左节点，较大右节点。</li>
-<li>中序遍历按照节点上的键值，以升序访问BST上的所有节点。</li>
-<li>先序遍历先访问根节点，然后以同样方式访问左子树和右子树。</li>
-<li>后序遍历先访问叶子节点，从左子树到右子树，再到根节点。</li>
-<li>图由边的集合及顶点的结合组成。</li>
-<li>边由顶点对定义（v1,v2）,v1和v2分别是图中的2个顶点。</li>
-<li>顶点也有权重，也称为成本。如果一个图的顶点是有序的，则可称为向图。如果图是无序的，则称之为无序图，或无向图。</li>
-<li>交换的原则就是将其中一个元素用一个变量存储起来，让这个元素等于另一元素，最后将另一元素等于当前变量。</li>
-</ol>
+        <p>1.散列后的数据可以快速的插入或取用，散列使用的数据结构叫做散列表</p>
+<p>2.使用散列表存储数据时，通过一个散列函数将键映射为一个数组，这个数字的范围是0到散列表的长度。<br>3.用散列函数时，存在将2个键映射成同一个值的可能，这种现象称为碰撞。</p>
+<a id="more"></a>
+<p>4.保留余数法。</p>
+<p>5.集合是一种包含不同元素的数据结构。2个特性： 无序，不同。</p>
+<p>6.树是一种非线性数据结构，以分层的方式存储数据。</p>
+<p>7.树最上面的节点称为根节点。</p>
+<p>8.父节点： 节点下面连接多个节点。这些下面的节点称为子节点。</p>
+<p>9.没有任何子节点的节点称为叶子节点。</p>
+<p>10.二叉树是一种特殊的树，它的字节点树不超过2个。</p>
+<p>11.从一个节点到另一个节点的这一组边称为路径，以某种特定的顺序访问树中所有的节点称为树的遍历。</p>
+<p>12.每个节点都有一个与之相关的值，该值为键。</p>
+<p>13.二叉查找树是一种特殊的二叉树，相对较小的值保存在左节点，较大右节点。</p>
+<p>14.中序遍历按照节点上的键值，以升序访问BST上的所有节点。</p>
+<p>15.先序遍历先访问根节点，然后以同样方式访问左子树和右子树。</p>
+<p>16.后序遍历先访问叶子节点，从左子树到右子树，再到根节点。</p>
+<p>17.图由边的集合及顶点的结合组成。</p>
+<p>18.边由顶点对定义（v1,v2）,v1和v2分别是图中的2个顶点。</p>
+<p>19.顶点也有权重，也称为成本。如果一个图的顶点是有序的，则可称为向图。如果图是无序的，则称之为无序图，或无向图。</p>
+<p>20.交换的原则就是将其中一个元素用一个变量存储起来，让这个元素等于另一元素，最后将另一元素等于当前变量。</p>
 
       
     </div>
@@ -390,8 +360,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/01/06/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
+              <a href="/2017/01/05/learing-datastrc/" rel="next" title="js数据结构和算法笔记">
+                <i class="fa fa-chevron-left"></i> js数据结构和算法笔记
               </a>
             
           </div>
@@ -473,10 +443,10 @@
 
           
             <div class="site-state-item site-state-tags">
-              <a href="/tags">
-                <span class="site-state-item-count">1</span>
+              
+                <span class="site-state-item-count">2</span>
                 <span class="site-state-item-name">标签</span>
-              </a>
+              
             </div>
           
 
@@ -513,7 +483,7 @@
       <div class="footer-inner">
         <div class="copyright" >
   
-  &copy; 
+  &copy;  2016 - 
   <span itemprop="copyrightYear">2017</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
@@ -529,7 +499,7 @@
 <div class="theme-info">
   主题 -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Mist
+    NexT.Pisces
   </a>
 </div>
 
@@ -596,6 +566,13 @@
 
   
   
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.0"></script>
+
+
 
   
   <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
