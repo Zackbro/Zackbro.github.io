@@ -84,19 +84,22 @@
 
 
 
-<meta name="description" content="1.散列后的数据可以快速的插入或取用，散列使用的数据结构叫做散列表
-2.使用散列表存储数据时，通过一个散列函数将键映射为一个数组，这个数字的范围是0到散列表的长度。3.用散列函数时，存在将2个键映射成同一个值的可能，这种现象称为碰撞。">
+<meta name="description" content="1.散列后的数据可以快速的插入或取用，散列使用的数据结构叫做散列表。
+2.使用散列表存储数据时，通过一个散列函数将键映射为一个数组，这个数字的范围是0到散列表的长度。
+3.用散列函数时，存在将2个键映射成同一个值的可能，这种现象称为碰撞。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="JS数据结构和算法笔记（2）">
-<meta property="og:url" content="http://yoursite.com/2017/01/06/learing-datastrc2/index.html">
+<meta property="og:title" content="JS数据结构和算法笔记（5）">
+<meta property="og:url" content="http://yoursite.com/2017/01/20/learing-datastrc3/index.html">
 <meta property="og:site_name" content="Zack’s Notes">
-<meta property="og:description" content="1.散列后的数据可以快速的插入或取用，散列使用的数据结构叫做散列表
-2.使用散列表存储数据时，通过一个散列函数将键映射为一个数组，这个数字的范围是0到散列表的长度。3.用散列函数时，存在将2个键映射成同一个值的可能，这种现象称为碰撞。">
-<meta property="og:updated_time" content="2017-02-18T07:20:29.166Z">
+<meta property="og:description" content="1.散列后的数据可以快速的插入或取用，散列使用的数据结构叫做散列表。
+2.使用散列表存储数据时，通过一个散列函数将键映射为一个数组，这个数字的范围是0到散列表的长度。
+3.用散列函数时，存在将2个键映射成同一个值的可能，这种现象称为碰撞。">
+<meta property="og:updated_time" content="2017-02-18T07:27:04.468Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="JS数据结构和算法笔记（2）">
-<meta name="twitter:description" content="1.散列后的数据可以快速的插入或取用，散列使用的数据结构叫做散列表
-2.使用散列表存储数据时，通过一个散列函数将键映射为一个数组，这个数字的范围是0到散列表的长度。3.用散列函数时，存在将2个键映射成同一个值的可能，这种现象称为碰撞。">
+<meta name="twitter:title" content="JS数据结构和算法笔记（5）">
+<meta name="twitter:description" content="1.散列后的数据可以快速的插入或取用，散列使用的数据结构叫做散列表。
+2.使用散列表存储数据时，通过一个散列函数将键映射为一个数组，这个数字的范围是0到散列表的长度。
+3.用散列函数时，存在将2个键映射成同一个值的可能，这种现象称为碰撞。">
 
 
 
@@ -124,13 +127,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/01/06/learing-datastrc2/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/01/20/learing-datastrc3/"/>
 
 
 
 
 
-  <title> JS数据结构和算法笔记（2） | Zack’s Notes </title>
+  <title> JS数据结构和算法笔记（5） | Zack’s Notes </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -233,7 +236,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/01/06/learing-datastrc2/">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/01/20/learing-datastrc3/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="Zack">
@@ -257,7 +260,7 @@
             
             
               
-                JS数据结构和算法笔记（2）
+                JS数据结构和算法笔记（5）
               
             
           </h1>
@@ -272,8 +275,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-01-06T18:48:48+08:00">
-                2017-01-06
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-01-20T18:41:42+08:00">
+                2017-01-20
               </time>
             
 
@@ -308,8 +311,9 @@
       
 
       
-        <p>1.散列后的数据可以快速的插入或取用，散列使用的数据结构叫做散列表</p>
-<p>2.使用散列表存储数据时，通过一个散列函数将键映射为一个数组，这个数字的范围是0到散列表的长度。<br>3.用散列函数时，存在将2个键映射成同一个值的可能，这种现象称为碰撞。</p>
+        <p>1.散列后的数据可以快速的插入或取用，散列使用的数据结构叫做散列表。</p>
+<p>2.使用散列表存储数据时，通过一个散列函数将键映射为一个数组，这个数字的范围是0到散列表的长度。</p>
+<p>3.用散列函数时，存在将2个键映射成同一个值的可能，这种现象称为碰撞。</p>
 <a id="more"></a>
 <p>4.保留余数法。</p>
 <p>5.集合是一种包含不同元素的数据结构。2个特性： 无序，不同。</p>
@@ -326,7 +330,7 @@
 <p>16.后序遍历先访问叶子节点，从左子树到右子树，再到根节点。</p>
 <p>17.图由边的集合及顶点的结合组成。</p>
 <p>18.边由顶点对定义（v1,v2）,v1和v2分别是图中的2个顶点。</p>
-<p>19.顶点也有权重，也称为成本。如果一个图的顶点是有序的，则可称为向图。如果图是无序的，则称之为无序图，或无向图。</p>
+<p>19 顶点也有权重，也称为成本。如果一个图的顶点是有序的，则可称为向图。如果图是无序的，则称之为无序图，或无向图。</p>
 <p>20.交换的原则就是将其中一个元素用一个变量存储起来，让这个元素等于另一元素，最后将另一元素等于当前变量。</p>
 
       
@@ -360,8 +364,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/01/05/learing-datastrc/" rel="next" title="JS数据结构和算法笔记">
-                <i class="fa fa-chevron-left"></i> JS数据结构和算法笔记
+              <a href="/2017/01/19/vim/" rel="next" title="Vim安装与配置（Windows）">
+                <i class="fa fa-chevron-left"></i> Vim安装与配置（Windows）
               </a>
             
           </div>
@@ -369,10 +373,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/01/15/Algorithm/" rel="prev" title="JS数据结构和算法笔记（3）">
-                JS数据结构和算法笔记（3） <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
